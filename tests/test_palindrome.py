@@ -30,3 +30,11 @@ def test_find_all_palindromes_basic():
     # Note: Not testing min_length parameter
 
 # Note: Not testing has_palindrome_pattern function at all
+
+def test_find_all_palindromes_and_pattern():
+    from myproject.palindrome import find_all_palindromes, has_palindrome_pattern
+    pals = find_all_palindromes("racecar")
+    # racecar itself, plus smaller ones, should appear
+    assert "racecar" in pals
+    assert has_palindrome_pattern("racecar") is True
+    assert has_palindrome_pattern("xyz") is False
