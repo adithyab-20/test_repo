@@ -43,3 +43,7 @@ def find_all_palindromes(text, min_length=3):
 def has_palindrome_pattern(text):
     """Check if text contains any palindrome of length 3 or more."""
     return len(find_all_palindromes(text, min_length=3)) > 0
+
+def helper_function(x):
+    """A helper with no tests."""
+    return x * 2
