@@ -30,3 +30,10 @@ def test_find_all_palindromes_basic():
     # Note: Not testing min_length parameter
 
 # Note: Not testing has_palindrome_pattern function at all
+
+def test_get_longest_palindrome_edge_cases():
+    from myproject.palindrome import get_longest_palindrome
+    assert get_longest_palindrome("") == ""
+    assert get_longest_palindrome("a") == "a"
+    # a longer string:
+    assert get_longest_palindrome("abacdfgdcaba") == "aba"
